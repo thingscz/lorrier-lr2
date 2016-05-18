@@ -1,4 +1,4 @@
-# may/18/2016 09:20:50 by RouterOS 6.35.1
+# may/18/2016 09:40:42 by RouterOS 6.35.1
 #
 /interface ethernet
 set [ find default-name=ether1 ] advertise=\
@@ -61,7 +61,7 @@ add name=pool1 ranges=10.10.10.2
 /ip dhcp-server
 add address-pool=pool1 authoritative=after-2sec-delay bootp-support=static \
     disabled=no interface=ether5_local lease-script="" lease-time=10m name=\
-    server1
+    dhcp1
 /port
 set 0 baud-rate=9600 data-bits=8 flow-control=none name=usb1 parity=none \
     stop-bits=1
@@ -165,7 +165,7 @@ set allow-fast-path=no authentication=pap,chap,mschap1,mschap2 \
     mrru=disabled use-ipsec=no
 /interface ovpn-server server
 set auth=sha1,md5 cipher=blowfish128,aes128 default-profile=default enabled=\
-    no keepalive-timeout=60 mac-address=FE:99:78:87:D5:DF max-mtu=1500 mode=\
+    no keepalive-timeout=60 mac-address=FE:1C:E6:0A:BF:C7 max-mtu=1500 mode=\
     ip netmask=24 port=1194 require-client-certificate=no
 /interface pptp-server server
 set authentication=mschap1,mschap2 default-profile=default-encryption \
