@@ -1,0 +1,12 @@
+# Lorrier LR2 repository
+
+lorrier.rsc / default RouterOS configuration
+
+  - winbox standard port 8291, ssh standard port 22, other services disabled
+  - admin / no password
+  - cisco discovery protocol on all interfaces
+  - eth0_wan: 192.168.1.2/24, gw 192.168.1.1
+  - eth5_lan: 10.10.10.1 + DHCP server (ranges=10.10.10.2, 1 IP only)
+  - src&dst nat for arm IP address (SSH 2222 > 22) set and disabled
+  - DNS services, 4 x public DNS (OpenDNS and Google public DNS)
+  - NTP services, 2 x ntp.org (US, EU)
