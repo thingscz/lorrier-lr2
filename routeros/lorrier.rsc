@@ -1,4 +1,5 @@
-# may/18/2016 09:40:42 by RouterOS 6.35.1
+# may/19/2016 10:49:02 by RouterOS 6.35.1
+# software id = 4BYK-42IJ
 #
 /interface ethernet
 set [ find default-name=ether1 ] advertise=\
@@ -165,7 +166,7 @@ set allow-fast-path=no authentication=pap,chap,mschap1,mschap2 \
     mrru=disabled use-ipsec=no
 /interface ovpn-server server
 set auth=sha1,md5 cipher=blowfish128,aes128 default-profile=default enabled=\
-    no keepalive-timeout=60 mac-address=FE:1C:E6:0A:BF:C7 max-mtu=1500 mode=\
+    no keepalive-timeout=60 mac-address=FE:9D:3D:49:AB:A0 max-mtu=1500 mode=\
     ip netmask=24 port=1194 require-client-certificate=no
 /interface pptp-server server
 set authentication=mschap1,mschap2 default-profile=default-encryption \

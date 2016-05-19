@@ -1,6 +1,6 @@
 # Lorrier LR2 repository
 
-lorrier.rsc / default RouterOS configuration
+lorrier.rsc + lorrier.backup / default RouterOS (6.35.1) configuration
 
   - winbox standard port 8291, ssh standard port 22, other services disabled
   - admin / no password
