@@ -1,3 +1,3 @@
 # Lorrier LR2 repository
 
-RouterOS & ARM config files
+repository moved to https://github.com/lorriercom/lorrier-lr2
